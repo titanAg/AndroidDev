@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout" >
+
+    <TextView
+        android:id="@+id/tv_host"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="Host"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etv_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etv_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert From" />
+
+        <RadioButton
+            android:id="@+id/r_cel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Celsius" />
+
+        <RadioButton
+            android:id="@+id/r_far"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit" />
+
+        <Button
+            android:id="@+id/b_convert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="readWebpage"
+            android:text="Convert" />
+
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+</LinearLayout>

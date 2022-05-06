@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab1ChangeImage</string>
+    <string name="imageLabel">imageLabel</string>
+    <string name="kyle_orcutt">Kyle Orcutt</string>
+    <string name="change_image">Change Image</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="this_is_my_first_android_app_created_for_cosc_326_being_offered_at_okanagan_college_in_the_winter_semester_2021">This is my first Android App created for COSC 326 being offered at Okanagan College in the Winter Semester 2021!</string>
+    <string name="show_message">Show Message</string>
+    <string name="happy_new_year">Happy New Year!</string>
+</resources>

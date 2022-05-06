@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#393939"
+    android:paddingLeft="10pt"
+    android:paddingRight="10pt"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/profileLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/kyle_orcutt"
+        android:textColor="#FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="2dp"
+        android:text="@string/this_is_my_first_android_app_created_for_cosc_326_being_offered_at_okanagan_college_in_the_winter_semester_2021"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileLabel" />
+
+    <TextView
+        android:id="@+id/msg2"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="4dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="2dp"
+        android:text="@string/happy_new_year"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/msg1"
+        app:layout_constraintTop_toBottomOf="@+id/msg1" />
+
+    <Button
+        android:id="@+id/ChangeBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@drawable/button_sel"
+        android:text="@string/change_image"
+        android:onClick="changeImage"
+        app:layout_constraintBottom_toTopOf="@+id/showBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/showBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@drawable/button_sel"
+        android:text="@string/show_message"
+        android:onClick="showMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/profile_picture"
+            android:src="@drawable/img1"
+            app:srcCompat="@drawable/ic_launcher_background" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

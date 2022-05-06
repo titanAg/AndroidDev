@@ -1,0 +1,3 @@
+include ':KyleO_FragmentApp'
+include ':app'
+rootProject.name = "L4_FragmentsSplitScreen"

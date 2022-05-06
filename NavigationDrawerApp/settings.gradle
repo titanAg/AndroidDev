@@ -1,0 +1,3 @@
+include ':KyleO_MenuApp'
+include ':app'
+rootProject.name = "L4_NavigationDrawerApp"

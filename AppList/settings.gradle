@@ -1,0 +1,2 @@
+include ':KyleO_AppList'
+rootProject.name = "AppList"
